@@ -3,9 +3,25 @@ import pyautogui
 import time
 from tkinter import *
 
+# fixed your putrid, horrid, disgusting code max :)
+
 def thiswaseasy(email, subject, text, repeat):
     if subject.strip() == "":
-        thiswaseasywithoutsubject(email, text, repeat)
+        os.startfile("Outlook")
+        time.sleep(10)
+        for _ in range(repeat):
+            pyautogui.click(115, 102)
+            time.sleep(0.5)
+            pyautogui.write(email)
+            time.sleep(0.5)
+            pyautogui.press("ENTER")
+            time.sleep(1)
+            pyautogui.click(128, 380)
+            pyautogui.write(text)  
+            pyautogui.click(113, 256)
+            time.sleep(0.5)
+            pyautogui.click(845, 501)
+            time.sleep(1)
     else:
         os.startfile("Outlook")
         time.sleep(10)
@@ -23,23 +39,6 @@ def thiswaseasy(email, subject, text, repeat):
             pyautogui.click(128, 380)
             pyautogui.write(text)
             pyautogui.click(113, 256)
-            time.sleep(1)
-
-def thiswaseasywithoutsubject(email, text, repeat):
-    os.startfile("Outlook")
-    time.sleep(10)
-    for _ in range(repeat):
-            pyautogui.click(115, 102)
-            time.sleep(0.5)
-            pyautogui.write(email)
-            time.sleep(0.5)
-            pyautogui.press("ENTER")
-            time.sleep(1)
-            pyautogui.click(128, 380)
-            pyautogui.write(text)  
-            pyautogui.click(113, 256)
-            time.sleep(0.5)
-            pyautogui.click(845, 501)
             time.sleep(1)
 
 def start():
@@ -72,3 +71,13 @@ start_button = Button(root, text="Start", command=start)
 start_button.grid(row=4, column=0, columnspan=2, pady=10)
 
 root.mainloop()
+
+
+
+
+
+
+
+
+
+# Me when my mum mentions I'm alone on valentines day for the 8th year in a row (I need to explain what a sigma male is)
